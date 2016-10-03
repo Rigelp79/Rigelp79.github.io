@@ -14,6 +14,7 @@ $(function () {
                 squareSelected.addClass('ex');
                 if (checkWinner('ex')) {
                     alert('Congrats! Player ' + player + ' has won!');
+                    window.location.reload();
                 } else {
                     player = 2;
                 }
@@ -21,14 +22,16 @@ $(function () {
                 squareSelected.addClass('oh');
                 if (checkWinner('oh')) {
                     alert('Congrats! Player ' + player + ' has won!');
+                    window.location.reload();
                 } else {
                     player = 1;
                 }
             }
+            
 
         }
     })
-
+//this is necessary
     function checkWinner(symbol) {
 
         if ($('.sq1').hasClass(symbol) && $('.sq2').hasClass(symbol) && $('.sq3').hasClass(symbol)) {
