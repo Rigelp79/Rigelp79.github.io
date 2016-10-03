@@ -9,7 +9,7 @@ $(function () {
     })
 
 });
-
+//this is necessary
 var getFromGoogle = function (zipCode) {
     var googleKey = "&key=AIzaSyDgTR-lywqWl_7MSAH5FvpV7QMBWTpsRJg";
     var google = "https://maps.googleapis.com/maps/api/geocode/json?address=" + zipCode + googleKey;
